@@ -52,10 +52,21 @@ table {
 	border-spacing: 0;
 }
 /* -------------------- ROOT VARIABLES --------------------------------------- */
-body{
-    background-color: green;
-}
 /* --------------------GLOBAL STYLES (mobile first/small) --------------------*/
+@media screen and (min-width:428px){
+    #fruits{
+        display:flex;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        margin: 5px;
+        
+    }
+
+}
 /*-------------------- MEDIA QUERY (medium) --------------------------------*/
 /*-------------------- MEDIA QUERY (large) ------------------------------------*/
 /*-------------------- MEDIA QUERY (xl) ---------------------------------------*/
+#contact{
+    display: inline-block;
+    text-decoration: dashed green;
+}
