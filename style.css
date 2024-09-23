@@ -106,19 +106,36 @@ nav ul{
 main{
 	display: block;
 }
+#fruits{
+	display: flex;
+	flex-direction:row;
+	flex-wrap: wrap;
+	gap:10px;
+
+}
+
 /* --------------------GLOBAL STYLES (mobile first/small) --------------------*/
 
 @media screen and (min-width:428px){
-	
-	#fruits{
-		display:flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-		padding: 1rem;
-		margin-top: 5px;
+	section img{
+		width: fit-content;
+		height: auto;
 	}
 }
 
 /*-------------------- MEDIA QUERY (medium) --------------------------------*/
+@media screen and (min-width:834px){
+	
+}
+
 /*-------------------- MEDIA QUERY (large) ------------------------------------*/
+@media screen and (min-width:1280px){
+}
+
 /*-------------------- MEDIA QUERY (xl) ---------------------------------------*/
+
+@media screen and (min-width:1440px) {
+	main{
+		max-width: 1440px;
+	}
+}
