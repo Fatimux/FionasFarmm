@@ -1,7 +1,9 @@
 /* -------------------- IMPORTED FONTS -------------------------------------- */
-*{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
+.love-ya-like-a-sister-regular {
+	font-family: "Love Ya Like A Sister", cursive;
+	font-weight: 400;
+	font-style: normal;
+  }
 /*-------------------- CSS RESET ---------------------------------------------------*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -53,12 +55,69 @@ table {
 }
 /* -------------------- ROOT VARIABLES --------------------------------------- */
 :root{
-    neon-green: #30ec30;
-    neon-orange: #fc8517;
-    bright-white: #ffffff;
+    --neon-green: #30ec30;
+    --neon-orange: #fc8517;
+    --bright-white: #ffffff;
 
 }
+/* --------------------------------------------------------------------------*/
+header,footer{
+	background-color: var(--neon-green);
+	color:var(--bright-white);
+	border:2px solid var(--neon-green);
+	font-family: "Love Ya Like A Sister", cursive;
+	font-size: 20px;
+}
+h1,h2{
+	font-size: 30px;
+	font-weight: bold;
+	margin: 2px;
+	
+}	
+p{
+	text-align: left;
+	font-size: 20px;
+	padding: 2px;
+	text-decoration: none;
+	margin: 5px;
+	margin-bottom: 5px;
+}
+h3{
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+}
+nav {
+	display:flex;
+	justify-content: right;
+	margin: auto;
+}
+nav a{
+	display: block;
+	background-color: var(--neon-orange);
+	text-decoration: none;
+	border: var(--bright-white solid);
+	padding-top: 10px;
+}
+nav ul{
+	position: relative;
+	
+}
+main{
+	display: block;
+}
 /* --------------------GLOBAL STYLES (mobile first/small) --------------------*/
+
+@media screen and (min-width:428px){
+	
+	#fruits{
+		display:flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		padding: 1rem;
+		margin-top: 5px;
+	}
+}
 
 /*-------------------- MEDIA QUERY (medium) --------------------------------*/
 /*-------------------- MEDIA QUERY (large) ------------------------------------*/
