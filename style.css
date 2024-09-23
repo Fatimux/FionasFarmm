@@ -106,21 +106,22 @@ nav ul{
 main{
 	display: block;
 }
-#fruits{
+#fruits,#veggies{
 	display: flex;
 	flex-direction:row;
 	flex-wrap: wrap;
+	align-items:baseline;
 	gap:10px;
 
 }
-
+section img{
+	width: fit-content;
+	height: auto;
+}
 /* --------------------GLOBAL STYLES (mobile first/small) --------------------*/
 
 @media screen and (min-width:428px){
-	section img{
-		width: fit-content;
-		height: auto;
-	}
+	
 }
 
 /*-------------------- MEDIA QUERY (medium) --------------------------------*/
