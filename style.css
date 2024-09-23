@@ -100,7 +100,10 @@ nav a{
 	padding-top: 10px;
 }
 nav ul{
-	position: relative;
+	display: flex;
+	gap: 5px;
+	border: solid var(--bright-white);
+
 	
 }
 main{
